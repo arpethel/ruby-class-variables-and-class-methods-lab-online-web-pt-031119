@@ -34,9 +34,9 @@ class Song
       binding.pry
     end
 
-    genre_count.each do |k, v|
-
-    end
+    # genre_count.each do |k, v|
+    # 
+    # end
 
   end
 
