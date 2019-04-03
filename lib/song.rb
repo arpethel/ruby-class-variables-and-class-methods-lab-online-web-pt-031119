@@ -25,7 +25,7 @@ class Song
 
   def self.artists
     binding.pry
-    @@artists.unique
+    @@artists.uniq
   end
 
   def self.genres
