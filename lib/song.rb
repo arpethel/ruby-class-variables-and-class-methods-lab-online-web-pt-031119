@@ -24,15 +24,15 @@ class Song
   end
 
   def self.artists
-    @@artists << @artist
+    @@artists << @artist if !@artist = nil
   end
 
   def self.genres
     @@genres << @genre
   end
 
-  def artists
-    binding.pry
-  end
+  # def artists
+  #   # binding.pry
+  # end
 
 end
