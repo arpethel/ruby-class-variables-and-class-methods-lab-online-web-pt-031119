@@ -29,28 +29,27 @@ class Song
   end
 
   def self.genre_count
-    # binding.pry
     genre_count = {}
     @@genres.each do |genres|
-      # binding.pry
       if !genre_count.include?(genres)
         genre_count[genres] = 1
       else
         genre_count[genres] += 1
       end
-      # genre_count[genres] = genres
-      # genre_count[genres][value]
-      # binding.pry
     end
     genre_count
-    # genre_count.each do |k, v|
-    #
-    # end
-
   end
 
-  # def artist_count
-  #
-  # end
+  def self.artist_count
+    artist_count = {}
+    @@artists.each do |artists|
+      if !artist_count.include?(artists)
+        artist_count[artists] = 1
+      else
+        artist_count[artists] += 1
+      end
+    end
+    artist_count
+  end
 
 end
