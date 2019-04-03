@@ -29,7 +29,10 @@ class Song
   end
 
   def self.genre_count
+    # count the genres
+    # and place that number as a value to the genre key
     self.genres.each do |genre|
+      binding.pry
       @@genre_count[genre] ||= []
       @@genre_count[genre] << stuff here
       binding.pry
