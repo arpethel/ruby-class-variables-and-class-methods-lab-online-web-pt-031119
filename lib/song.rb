@@ -7,7 +7,7 @@ class Song
   @@count = 0
   @@artists = []
   @@genres = []
-  @@genre_count = {}
+  # @@genre_count = {}
 
   def initialize(name, artist, genre)
     @@count += 1
@@ -29,14 +29,15 @@ class Song
   end
 
   def self.genre_count
-    # count the songs
-    # and place that number as a value to the genre key
-    self.genres.each do |genre|
-      # binding.pry
-      @@genre_count[genre] ||= []
-      # @@genre_count[genre] << stuff here
+    genre_count = {}
+    @@genres.each do |genres|
+      binding.pry
+    end
+
+    genre_count.each do |k, v|
 
     end
+
   end
 
   # def artist_count
