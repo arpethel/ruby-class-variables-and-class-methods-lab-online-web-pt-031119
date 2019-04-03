@@ -15,7 +15,7 @@ class Song
   def initialize(name, artist, genre)
     @@count += 1
     @name = name
-    @artist = artist
+    @@artists << @artist = artist
     @genre = genre
   end
 
@@ -24,7 +24,7 @@ class Song
   end
   # binding.pry
   def self.artists
-    binding.pry
+    # binding.pry
     @@artists << @artist
   end
 
