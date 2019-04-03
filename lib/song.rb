@@ -28,9 +28,10 @@ class Song
     @@genres.uniq
   end
 
-  def self.genre_count
-    self.genres.each do |genre, song|
+  def self.genre_count(song)
+    self.genres.each do |genre|
       @@genre_count[genre] ||= []
+      @@genre_count[genre] << song
       binding.pry
     end
   end
