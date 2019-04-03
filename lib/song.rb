@@ -16,21 +16,20 @@ class Song
     @@count += 1
     @name = name
     @@artists << @artist = artist
-    @genre = genre
+    @@genre << @genre = genre
   end
 
   def self.count
     @@count
   end
-  # binding.pry
+
   def self.artists
-    # binding.pry
     @@artists << @artist
   end
 
-  # def self.genres(genre)
-  #   @@genres << genre
-  # end
+  def self.genres
+    @@genres << @genre
+  end
 
 
 end
