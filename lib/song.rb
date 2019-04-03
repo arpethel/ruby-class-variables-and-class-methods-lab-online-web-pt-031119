@@ -34,7 +34,7 @@ class Song
     self.genres.each do |genre|
       binding.pry
       @@genre_count[genre] ||= []
-      @@genre_count[genre] << stuff here
+      # @@genre_count[genre] << stuff here
 
     end
   end
