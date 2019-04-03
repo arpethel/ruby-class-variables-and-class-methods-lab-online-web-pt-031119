@@ -29,9 +29,14 @@ class Song
   end
 
   def self.genre_count
+    # binding.pry
     genre_count = {}
     @@genres.each do |genres|
       binding.pry
+      genre_count[genres] ||= []
+      genre_count[genres] = genres
+      genre_count[genres][value]
+      # binding.pry
     end
 
     # genre_count.each do |k, v|
