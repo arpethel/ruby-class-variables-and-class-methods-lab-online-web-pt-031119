@@ -17,7 +17,7 @@ class Song
     @name = name
     @@artists << @artist = artist
     @@genres << @genre = genre
-    @the_genres = {}
+    @@genre_count = {}
   end
 
   def self.count
@@ -32,7 +32,7 @@ class Song
     @@genres.uniq
   end
 
-  def genre_count(genre, song)
+  def self.genre_count(genre, song)
     # binding.pry
     # @the_genres[song] ||= []
     @the_genres[genre][song]
