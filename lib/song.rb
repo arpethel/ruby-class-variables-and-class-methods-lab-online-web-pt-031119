@@ -22,7 +22,7 @@ class Song
   def self.count
     @@count
   end
-
+  binding.pry
   def self.artists(artist)
     binding.pry
     # @@artists << artist
