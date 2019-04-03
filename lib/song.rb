@@ -32,10 +32,14 @@ class Song
     # binding.pry
     genre_count = {}
     @@genres.each do |genres|
-      binding.pry
-      genre_count[genres] ||= []
-      genre_count[genres] = genres
-      genre_count[genres][value]
+      # binding.pry
+      if !genre_count[genres].include?(genres)
+        genre_count[genres] = 1
+      else
+        genre_count[genres] += 1
+      end
+      # genre_count[genres] = genres
+      # genre_count[genres][value]
       # binding.pry
     end
 
