@@ -32,7 +32,7 @@ class Song
     @@genres.uniq
   end
 
-  def self.genre_count(genre, song)
+  def self.genre_count
     binding.pry
     # @the_genres[song] ||= []
     # @the_genres[genre][song]
