@@ -25,12 +25,12 @@ class Song
 
   def self.artists(artist)
     binding.pry
-    @@artists << artist
+    # @@artists << artist
   end
 
-  def self.genres(genre)
-    @@genres << genre
-  end
+  # def self.genres(genre)
+  #   @@genres << genre
+  # end
 
 
 end
