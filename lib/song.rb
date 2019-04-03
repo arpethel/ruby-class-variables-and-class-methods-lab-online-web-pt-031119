@@ -27,9 +27,9 @@ class Song
     @@artists << @artist
   end
 
-  # def self.genres
-  #   @@genres << @genre
-  # end
+  def self.genres
+    @@genres << @genre
+  end
 
 
 end
