@@ -35,7 +35,7 @@ class Song
       binding.pry
       @@genre_count[genre] ||= []
       @@genre_count[genre] << stuff here
-      binding.pry
+
     end
   end
 
