@@ -20,6 +20,7 @@ class Song
 
   def count
     binding.pry
+    self.song
   end
 
 
