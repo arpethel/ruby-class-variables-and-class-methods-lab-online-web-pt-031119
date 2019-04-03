@@ -42,7 +42,7 @@ class Song
       # genre_count[genres][value]
       # binding.pry
     end
-
+    genre_count
     # genre_count.each do |k, v|
     #
     # end
