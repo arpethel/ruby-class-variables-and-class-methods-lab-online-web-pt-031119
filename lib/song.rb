@@ -9,7 +9,7 @@ class Song
   # Keep track of the number of songs that it creates
 
   @@count = 0
-  @@artist = []
+  @@artists = []
   @@genres = []
 
   def initialize(name, artist, genre)
@@ -21,6 +21,14 @@ class Song
 
   def self.count
     @@count
+  end
+
+  def self.artists(artist)
+    @@artists << artist
+  end
+
+  def self.genres(genre)
+    @@genres << genre
   end
 
 
