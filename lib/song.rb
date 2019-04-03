@@ -11,6 +11,7 @@ class Song
   @@count = 0
   @@artists = []
   @@genres = []
+  genre_counts = {}
 
   def initialize(name, artist, genre)
     @@count += 1
@@ -24,7 +25,6 @@ class Song
   end
 
   def self.artists
-    # binding.pry
     @@artists.uniq
   end
 
@@ -32,9 +32,9 @@ class Song
     @@genres.uniq
   end
 
-  # def genre_count
-  #   binding.pry
-  # end
+  def genre_count(genre_counts)
+    binding.pry
+  end
 
   # def artist_count
   #
