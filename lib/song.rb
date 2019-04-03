@@ -33,8 +33,9 @@ class Song
   end
 
   def genre_count(genre, song)
-    binding.pry
-    @the_genres[song] ||= []
+    # binding.pry
+    # @the_genres[song] ||= []
+    @the_genres[genre][song]
 
   end
 
