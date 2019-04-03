@@ -31,8 +31,12 @@ class Song
     @@genres << @genre
   end
 
-  # def artists
-  #   # binding.pry
-  # end
+  def genre_count
+    binding.pry
+  end
+
+  def artist_count
+    
+  end
 
 end
