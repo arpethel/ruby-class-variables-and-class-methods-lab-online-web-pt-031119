@@ -24,7 +24,7 @@ class Song
   end
 
   def self.artists
-    @@artists << @artist if !@artist = nil
+    @@artists << @artist if @artist != nil
   end
 
   def self.genres
