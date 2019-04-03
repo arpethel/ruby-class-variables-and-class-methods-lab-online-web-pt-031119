@@ -31,5 +31,8 @@ class Song
     @@genres << @genre
   end
 
+  def artists
+    binding.pry
+  end
 
 end
