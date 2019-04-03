@@ -18,7 +18,7 @@ class Song
     @genre = genre
   end
 
-  def count(songs)
+  def count(song)
     binding.pry
   end
 
